@@ -1,8 +1,12 @@
 .header{
-    background-color: #B65F28;
+    background-color: #233F47;
 }
 
 .logo{
-    height: 70px;
+    height: 20px;
     width: auto;
+}
+
+button{
+    color: white;
 }

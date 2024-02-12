@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.titre{
+  position: absolute;
+  top: 25%; /* Ajustez cette valeur pour centrer verticalement le titre */
+  left: 35%; /* Ajustez cette valeur pour centrer horizontalement le titre */
+  transform: translate(-50%, -50%); /* Pour centrer parfaitement le titre */
+  color: white; /* Couleur du texte, ajustez selon vos besoins */
+  z-index: 1; /* Mettez le titre au-dessus de l'image */
+  color: #B3DEE5;
+  opacity: 0.7;
+  text-align: left;
+  font-family: Sixtyfour;
+  
+}
