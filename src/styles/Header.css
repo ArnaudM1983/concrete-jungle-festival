@@ -1,12 +1,69 @@
-.header{
-    background-color: #233F47;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
 
 .logo{
-    height: 20px;
+    height: 30px;
     width: auto;
 }
 
-button{
-    color: white;
-}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #233F47;
+    color: #B3DEE5;
+    font-family: Lexend Deca;
+    font-weight: 100;
+  }
+  
+  .logo-container {
+    order: 2;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+  
+  .burger-menu {
+    order: 1;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Ajout de cette ligne */
+  }
+  
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #233F47;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 2;
+    
+    border-bottom: 0.5px solid #B3DEE5;
+  }
+  
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  
