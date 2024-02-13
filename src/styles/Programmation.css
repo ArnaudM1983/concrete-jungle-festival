@@ -15,7 +15,7 @@ p{
 }
 
 .programmation{
-    background-color: #233F47;
+    background-color: #00283A;
 }
 
 hr{
@@ -27,8 +27,20 @@ ul{
 }
 
 h3{
-    color: #B3DEE5;
+    color: #FFA101;
     font-family: Gruppo;
     font-weight: bolder;
+}
 
+label{
+    color: #B3DEE5;
+    font-family: Montserrat;
+
+}
+
+.button{
+    color: #8C1C13;
+    background-color: #FFA101;
+    border: none;
+    border-radius: 10px;
 }
