@@ -4,7 +4,7 @@
 
 
 h2{
-    color: #FFA101;
+    color: #bef800;
     font-family: Gruppo;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@ ul{
 }
 
 h3{
-    color: #FFA101;
+    color: #bef800;
     font-family: Gruppo;
     font-weight: bolder;
 }
@@ -39,8 +39,7 @@ label{
 }
 
 .button{
-    color: #8C1C13;
-    background-color: #FFA101;
-    border: none;
-    border-radius: 10px;
+    color: #FFA101;
+    background-color: #00283A;
+    border: solid 1px;
 }

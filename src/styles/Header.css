@@ -11,13 +11,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #233F47;
-    color: #B3DEE5;
+    background-color: #B3DEE5;
+    color: #00283A;
     font-family: Lexend Deca;
-    font-weight: 100;
+    font-weight: 400;
     background-image: url('../images/accueil.jpg');
-
-  }
+}
   
   .logo-container {
     order: 2;
@@ -51,7 +50,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #233F47;
+    background-color: #B3DEE5;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -68,4 +67,7 @@
     visibility: visible;
   }
 
+.header hr{
+  color: #8C1C13;
+}
   

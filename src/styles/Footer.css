@@ -1,5 +1,5 @@
 .footer{
-    background-color: #233F47;
+    background-color: #B3DEE5;
     color: white;
 }
 
@@ -8,4 +8,8 @@
 .reseaux-sociaux .twitter-icon{
     height: 40px;
     width: auto;
+}
+
+.footer p{
+    color: #00283A;
 }

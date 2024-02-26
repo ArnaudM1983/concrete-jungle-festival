@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className='footer'>
             <>
-                <footer className="container-fluid pt-3 mt-5">
+                <footer className="container-fluid pt-3">
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <p className="fs-4">Choco pap</p>
@@ -31,10 +31,11 @@ function Footer() {
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='text-reset'>
                                 <FaInstagram className="instagram-icon" /></a>
                             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className='text-reset'>
-                            <   FaTwitter className="twitter-icon" /></a>
+                                <   FaTwitter className="twitter-icon" /></a>
                         </div>
                     </div>
                 </footer>
+
             </>
         </div>
 

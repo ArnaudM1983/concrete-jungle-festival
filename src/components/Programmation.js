@@ -10,7 +10,10 @@ const Programmation = () => {
 
   useEffect(() => {
     // Requête AJAX pour récupérer les événements depuis WordPress
-    fetch('http://localhost:8888/concrete-jungle-festival/wp-json/tribe/events/v1/events')
+    const categories = 'concert,animation'; // Liste des catégories séparées par des virgules
+  const perPage = 25;
+
+  fetch(`http://localhost:8888/concrete-jungle-festival/wp-json/tribe/events/v1/events?categories=${categories}&per_page=${perPage}`)
       .then(response => response.json())
       .then(data => {
         setConcerts(data.events);
@@ -89,7 +92,7 @@ const Programmation = () => {
       </div>
     </div>
 
-      <ul>
+      <ul className='mb-0 px-3'>
         {filteredConcerts.map(concert => (
           <React.Fragment key={concert.id}>
             <li>
@@ -97,7 +100,7 @@ const Programmation = () => {
               <p>{concert.venue.venue}</p>
               <p>Date et Heure: {concert.start_date}</p>
               </li>
-            <hr className='horizontal-line' />
+            <hr className='horizontal-line mb-0 pb-2' />
           </React.Fragment>
         ))}
       </ul>

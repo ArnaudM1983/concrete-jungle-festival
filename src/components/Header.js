@@ -26,7 +26,22 @@ const Header = () => {
         </NavLink><hr></hr>
         <NavLink to="/Programmation" className="nav-link" onClick={toggleMenu}>
           Programmation
-        </NavLink>
+        </NavLink><hr></hr>
+        <NavLink to="/Concerts" className="nav-link" onClick={toggleMenu}>
+          Concerts
+        </NavLink><hr></hr>
+        <NavLink to="/Billetterie" className="nav-link" onClick={toggleMenu}>
+          Billetterie
+        </NavLink><hr></hr>
+        <NavLink to="FAQ" className="nav-link" onClick={toggleMenu}>
+          FAQ
+        </NavLink><hr></hr>
+        <NavLink to="Informations Pratiques" className="nav-link" onClick={toggleMenu}>
+          Informations Pratiques
+        </NavLink><hr></hr>
+        <NavLink to="Reseaux" className="nav-link" onClick={toggleMenu}>
+          Réseaux Sociaux
+        </NavLink><hr></hr>
       </nav>
     </div>
   );

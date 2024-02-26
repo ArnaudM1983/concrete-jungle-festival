@@ -1,29 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
 
-img{
-    max-width: 100%;
-    height: auto;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.titre{
+.titre {
   position: absolute;
-  top: 25%; /* Ajustez cette valeur pour centrer verticalement le titre */
-  left: 35%; /* Ajustez cette valeur pour centrer horizontalement le titre */
-  transform: translate(-50%, -50%); /* Pour centrer parfaitement le titre */
-  color: white; /* Couleur du texte, ajustez selon vos besoins */
-  z-index: 1; /* Mettez le titre au-dessus de l'image */
-  color: #B3DEE5;
-  opacity: 0.7;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Pour centrer parfaitement le titre */
+  color: white;
+  /* Couleur du texte, ajustez selon vos besoins */
+  z-index: 1;
+  /* Mettez le titre au-dessus de l'image */
   text-align: left;
-  font-family: Sixtyfour;
-  
+  font-family: Poppins;
+  letter-spacing: 3px;
+  font-size: 2em;
 }
 
-.accueil{
+.accueil {
   background-color: #233F47;
+  max-width: 100%;
+
 }
 
-p{
-  font-family: Sixtyfour;
+.date {
+  font-family: Poppins;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Pour centrer parfaitement le titre */
+  color: white;
+  /* Couleur du texte, ajustez selon vos besoins */
+  z-index: 1;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
 
+.bouton-billetterie{
+  font-family: Poppins;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Pour centrer parfaitement le titre */
+  color: white;
+  /* Couleur du texte, ajustez selon vos besoins */
+  z-index: 1;
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 200;
+  border: 2px solid;
+}
+
+.bouton-billet{
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #8C1C13;
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.billet h2{
+  color: #003852;
+  font-family: Poppins;
+  font-size: 45px;
+}
+
+.date-billet{
+  color: #8C1C13;
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.billet hr{
+  color: #003852;
+}
+
+.billet p{
+  color: #003852;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.faq{ 
+  background-color: #00283A;
+}
+
+.faq h2{
+  color: #bef800;
+  font-family: Poppins;
+  font-size: 35px;
+}
+
+.faq p{
+  color: #FFA101;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.faq hr{
+  color: #B3DEE5;
+margin-top: 50px;
+}
+
+.question{
+  color: #B3DEE5;
+  font-family: Poppins;
+  font-size: 25px;
+}
+
+.infos{ 
+  background-color: #00283A;
+}
+.infos h2{
+  color: #bef800;
+  font-family: Poppins;
+  font-size: 35px;
 }
