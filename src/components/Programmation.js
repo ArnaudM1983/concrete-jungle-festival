@@ -13,7 +13,7 @@ const Programmation = () => {
     const categories = 'concert,animation'; // Liste des catégories séparées par des virgules
   const perPage = 25;
 
-  fetch(`http://localhost:8888/concrete-jungle-festival/wp-json/tribe/events/v1/events?categories=${categories}&per_page=${perPage}`)
+  fetch(`http://cjezdhm.cluster029.hosting.ovh.net/wp-json/tribe/events/v1/events?categories=${categories}&per_page=${perPage}`)
       .then(response => response.json())
       .then(data => {
         setConcerts(data.events);
@@ -54,7 +54,7 @@ const Programmation = () => {
 
   return (
     <div className='programmation'>
-      <h2 className='pt-3 pb-4 text-center display-5'>PROGRAMMATION</h2>
+      <h2 className='pt-3 pb-4 text-center'>PROGRAMMATION</h2>
       
       
       <div className="filter-container text-center pb-4">

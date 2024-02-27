@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Programmation from './Programmation';
 import Concerts from './Concerts';
 import Reseaux from './Reseaux';
-
+import Partners from './Partners';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/FAQ" element={<iframe src="http://cjezdhm.cluster029.hosting.ovh.net/index.php/faq/" title="Billetterie" style={{ width: '100%', height: '100vh', border: 'none' }}></iframe>} />
           <Route path="/Informations Pratiques" element={<iframe src="http://cjezdhm.cluster029.hosting.ovh.net/index.php/informations-pratiques/" title="Billetterie" style={{ width: '100%', height: '100vh', border: 'none' }}></iframe>} />
           <Route path="/Reseaux" element={<Reseaux />} />
+          <Route path="/Partners" element={<Partners />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -42,6 +42,9 @@ const Header = () => {
         <NavLink to="Reseaux" className="nav-link" onClick={toggleMenu}>
           Réseaux Sociaux
         </NavLink><hr></hr>
+        <NavLink to="Partners" className="nav-link" onClick={toggleMenu}>
+          Partenaires
+        </NavLink><hr></hr>
       </nav>
     </div>
   );
