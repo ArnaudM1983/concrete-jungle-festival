@@ -10,7 +10,7 @@ const Programmation = () => {
 
   useEffect(() => {
     // Requête AJAX pour récupérer les événements depuis WordPress
-    const categories = 'concert,animation'; // Liste des catégories séparées par des virgules
+    const categories = 'concert,animation'; // Liste des catégories
   const perPage = 25;
 
   fetch(`http://cjezdhm.cluster029.hosting.ovh.net/wp-json/tribe/events/v1/events?categories=${categories}&per_page=${perPage}`)

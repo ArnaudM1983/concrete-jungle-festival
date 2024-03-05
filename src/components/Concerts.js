@@ -6,7 +6,7 @@ const Concerts = () => {
   const [concerts, setConcerts] = useState([]);
 
   useEffect(() => {
-    // Utilisez une requête AJAX pour récupérer les événements depuis WordPress
+    // Utilisstion d'une requête AJAX pour récupérer les événements depuis WordPress
     const category = 'Concert';
     const perPage = 20;
     fetch(`http://cjezdhm.cluster029.hosting.ovh.net/wp-json/tribe/events/v1/events?categories=${category}&per_page=${perPage}`)
