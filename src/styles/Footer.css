@@ -5,11 +5,19 @@
 
 .reseaux-sociaux .facebook-icon,
 .reseaux-sociaux .instagram-icon,
-.reseaux-sociaux .twitter-icon{
+.reseaux-sociaux .twitter-icon,
+.reseaux-sociaux .youtube-icon,
+.reseaux-sociaux .snapchat-icon,
+.reseaux-sociaux .linkedin-icon{
     height: 40px;
     width: auto;
+    color: #00283A;
 }
 
 .footer p{
     color: #00283A;
+}
+
+.copyright{
+    font-size: 13px;
 }

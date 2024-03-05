@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../images/logo.png';
+import logo1 from '../images/logo1.png';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-        <img src={logo} alt="logo" className="logo" />
+      <NavLink to="/" className="logo-link">
+          <img src={logo1} alt="logo" className="logo" />
+        </NavLink>
       </div>
       <button className={`burger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="bar1"></div>
@@ -44,6 +46,9 @@ const Header = () => {
         </NavLink><hr></hr>
         <NavLink to="Partners" className="nav-link" onClick={toggleMenu}>
           Partenaires
+        </NavLink><hr></hr>
+        <NavLink to="/Map" className="nav-link" onClick={toggleMenu}>
+          Carte du festival
         </NavLink><hr></hr>
       </nav>
     </div>

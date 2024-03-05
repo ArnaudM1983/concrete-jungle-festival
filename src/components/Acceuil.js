@@ -3,6 +3,7 @@ import accueil from '../images/accueil.jpg'
 import '../styles/Acceuil.css'
 import Programmation from './Programmation';
 import Concerts from './Concerts';
+import Map from './Map'
 import { NavLink } from 'react-router-dom';
 
 
@@ -34,9 +35,11 @@ function Acceuil() {
             </div>
             <div className='infos text-center pt-2 pb-5 px-3'>
                 <h2 className='pb-3'>INFORMATIONS PRATIQUES</h2>
+                <p><span className='question'>BESOIN D'UN RENSEIGNEMENT ?</span></p>
                 <p className='pt-3 pb-3'>Retrouvez ici toutes les informations nécessaires pour profiter pleinement du festival </p>
                 <NavLink to="/Informations Pratiques" className="bouton-billet py-2 px-3">INFORMATIONS PRATIQUES</NavLink>
             </div>
+            <Map />
         </div>
     );
 }

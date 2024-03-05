@@ -13,11 +13,8 @@ img {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Pour centrer parfaitement le titre */
   color: white;
-  /* Couleur du texte, ajustez selon vos besoins */
   z-index: 1;
-  /* Mettez le titre au-dessus de l'image */
   text-align: left;
   font-family: Poppins;
   letter-spacing: 3px;
@@ -26,7 +23,7 @@ img {
 
 .accueil {
   background-color: #233F47;
-  max-width: 100%;
+  width: 100%;
 
 }
 
@@ -36,9 +33,7 @@ img {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Pour centrer parfaitement le titre */
   color: white;
-  /* Couleur du texte, ajustez selon vos besoins */
   z-index: 1;
   font-size: 1.2em;
   letter-spacing: 3px;
@@ -51,9 +46,7 @@ img {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Pour centrer parfaitement le titre */
   color: white;
-  /* Couleur du texte, ajustez selon vos besoins */
   z-index: 1;
   font-size: 0.8em;
   text-decoration: none;
@@ -125,8 +118,15 @@ margin-top: 50px;
 .infos{ 
   background-color: #00283A;
 }
+
 .infos h2{
   color: #bef800;
   font-family: Poppins;
   font-size: 35px;
+}
+
+.infos p{
+  color: #FFA101;
+  font-family: Poppins;
+  font-size: 20px;
 }
