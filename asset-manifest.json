@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/concrete-jungle-festival/static/css/main.c8fae424.css",
+    "main.js": "/concrete-jungle-festival/static/js/main.460abc22.js",
+    "static/js/592.921c9188.chunk.js": "/concrete-jungle-festival/static/js/592.921c9188.chunk.js",
+    "static/media/accueil.jpg": "/concrete-jungle-festival/static/media/accueil.8a6c7e7225bdc52021ac.jpg",
+    "index.html": "/concrete-jungle-festival/index.html",
+    "main.c8fae424.css.map": "/concrete-jungle-festival/static/css/main.c8fae424.css.map",
+    "main.460abc22.js.map": "/concrete-jungle-festival/static/js/main.460abc22.js.map",
+    "592.921c9188.chunk.js.map": "/concrete-jungle-festival/static/js/592.921c9188.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8fae424.css",
+    "static/js/main.460abc22.js"
+  ]
+}
