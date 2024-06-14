@@ -33,7 +33,7 @@
     border: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Ajout de cette ligne */
+    align-items: flex-end; 
   }
   
   .burger-menu div {
