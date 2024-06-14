@@ -3,30 +3,38 @@ import axios from 'axios';
 import '../styles/Partners.css';
 
 const PartnersComponent = () => {
+  // Déclare deux états pour stocker les partenaires médias et institutionnels
   const [mediaPartners, setMediaPartners] = useState([]);
   const [institutionalPartners, setInstitutionalPartners] = useState([]);
 
   useEffect(() => {
+    // URL de l'API pour récupérer les partenaires
     const apiUrl = 'http://cjezdhm.cluster029.hosting.ovh.net/wp-json/wp/v2/partners?per_page=20';
 
+    // Requête GET pour récupérer les partenaires
     axios.get(apiUrl)
       .then(response => {
+        // Filtre les partenaires par catégories après avoir récupéré les données
         filterPartners(response.data);
       })
       .catch(error => {
+        // Affiche une erreur en cas de problème lors de la requête
         console.error('Error fetching partners:', error);
       });
   }, []);
 
+  // Fonction pour extraire l'URL de l'image du contenu HTML
   const extractImageFromContent = content => {
     const match = content.match(/<img[^>]+src="([^">]+)"/);
     return match ? match[1] : null;
   };
 
+  // Fonction pour filtrer les partenaires en fonction de leurs catégories
   const filterPartners = allPartners => {
-    const mediaPartners = allPartners.filter(partner => partner.categories.includes(19)); // Remplacez 1 par l'ID de la catégorie "Médias"
-    const institutionalPartners = allPartners.filter(partner => partner.categories.includes(20)); // Remplacez 2 par l'ID de la catégorie "Institutionnels"
+    const mediaPartners = allPartners.filter(partner => partner.categories.includes(19)); // Filtre les partenaires médias (ID de catégorie 19)
+    const institutionalPartners = allPartners.filter(partner => partner.categories.includes(20)); // Filtre les partenaires institutionnels (ID de catégorie 20)
 
+    // Met à jour les états avec les partenaires filtrés
     setMediaPartners(mediaPartners);
     setInstitutionalPartners(institutionalPartners);
   };
